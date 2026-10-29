@@ -118,7 +118,7 @@
     .story-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
     .story-card { background: var(--cream); border: 1px solid rgba(59,36,24,.06); border-radius: 18px; overflow: hidden; transition: transform .3s, box-shadow .3s; }
     .story-card:hover { transform: translateY(-7px); box-shadow: var(--shadow); }
-    .story-image { height: 235px; overflow: hidden; background: var(--beige); }
+    .story-image { display: block; height: 235px; overflow: hidden; background: var(--beige); }
     .story-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
     .story-card:hover .story-image img { transform: scale(1.06); }
     .story-content { padding: 23px 23px 25px; }
@@ -333,7 +333,7 @@
         </div>
         <div class="story-grid">
           <article class="story-card reveal">
-            <div class="story-image"><img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=900&q=80" alt="커피 원두와 커피 도구" loading="lazy"></div>
+            <a class="story-image" href="https://www.youtube.com/watch?v=PVM7iYhZ-2M" target="_blank" rel="noopener noreferrer" aria-label="커피는 어떻게 세상에 알려졌을까? 유튜브 영상 보기"><img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=900&q=80" alt="커피 원두와 커피 도구" loading="lazy"></a>
             <div class="story-content"><span class="category">HISTORY · 역사</span><h3>커피는 어떻게 세상에 알려졌을까?</h3><p>커피의 기원에 얽힌 전설부터 세계로 퍼져나간 흥미로운 여정을 따라가 봅니다.</p><a class="read-more" href="#contact">이야기 살펴보기 <span>↗</span></a></div>
           </article>
           <article class="story-card reveal">
