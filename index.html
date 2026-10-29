@@ -116,9 +116,9 @@
     .section-topline { display: flex; justify-content: space-between; align-items: end; gap: 24px; }
     .text-link { display: inline-flex; align-items: center; gap: 8px; color: var(--espresso); font-weight: 800; white-space: nowrap; border-bottom: 1px solid var(--gold); padding-bottom: 5px; }
     .story-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-    .story-card { background: var(--cream); border: 1px solid rgba(59,36,24,.06); border-radius: 18px; overflow: hidden; transition: transform .3s, box-shadow .3s; }
+    .story-card { display: block; color: inherit; background: var(--cream); border: 1px solid rgba(59,36,24,.06); border-radius: 18px; overflow: hidden; transition: transform .3s, box-shadow .3s; }
     .story-card:hover { transform: translateY(-7px); box-shadow: var(--shadow); }
-    .story-image { display: block; height: 235px; overflow: hidden; background: var(--beige); }
+    .story-image { height: 235px; overflow: hidden; background: var(--beige); }
     .story-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
     .story-card:hover .story-image img { transform: scale(1.06); }
     .story-content { padding: 23px 23px 25px; }
@@ -332,14 +332,14 @@
           <a class="text-link" href="#content">콘텐츠 더 만나기 <span aria-hidden="true">↗</span></a>
         </div>
         <div class="story-grid">
-          <article class="story-card reveal">
-            <a class="story-image" href="https://www.youtube.com/watch?v=PVM7iYhZ-2M" target="_blank" rel="noopener noreferrer" aria-label="커피는 어떻게 세상에 알려졌을까? 유튜브 영상 보기"><img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=900&q=80" alt="커피 원두와 커피 도구" loading="lazy"></a>
-            <div class="story-content"><span class="category">HISTORY · 역사</span><h3>커피는 어떻게 세상에 알려졌을까?</h3><p>커피의 기원에 얽힌 전설부터 세계로 퍼져나간 흥미로운 여정을 따라가 봅니다.</p><a class="read-more" href="#contact">이야기 살펴보기 <span>↗</span></a></div>
-          </article>
-          <article class="story-card reveal">
+          <a class="story-card reveal" href="https://www.youtube.com/watch?v=PVM7iYhZ-2M" target="_blank" rel="noopener noreferrer" aria-label="커피는 어떻게 세상에 알려졌을까? 유튜브 영상 보기">
+            <div class="story-image"><img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=900&q=80" alt="커피 원두와 커피 도구" loading="lazy"></div>
+            <div class="story-content"><span class="category">HISTORY · 역사</span><h3>커피는 어떻게 세상에 알려졌을까?</h3><p>커피의 기원에 얽힌 전설부터 세계로 퍼져나간 흥미로운 여정을 따라가 봅니다.</p><span class="read-more">이야기 살펴보기 <span>↗</span></span></div>
+          </a>
+          <a class="story-card reveal" href="https://www.youtube.com/shorts/OXMMvn3OszQ" target="_blank" rel="noopener noreferrer" aria-label="에티오피아, 커피의 고향을 만나다 유튜브 쇼츠 보기">
             <div class="story-image"><img src="https://images.unsplash.com/photo-1524350876685-274059332603?auto=format&fit=crop&w=900&q=80" alt="커피가 자라는 열대 산지의 분위기" loading="lazy"></div>
-            <div class="story-content"><span class="category">ORIGIN · 산지</span><h3>에티오피아, 커피의 고향을 만나다</h3><p>야생 커피의 고향으로 알려진 에티오피아. 그곳의 자연과 커피 문화 이야기를 소개합니다.</p><a class="read-more" href="#contact">이야기 살펴보기 <span>↗</span></a></div>
-          </article>
+            <div class="story-content"><span class="category">ORIGIN · 산지</span><h3>에티오피아, 커피의 고향을 만나다</h3><p>야생 커피의 고향으로 알려진 에티오피아. 그곳의 자연과 커피 문화 이야기를 소개합니다.</p><span class="read-more">이야기 살펴보기 <span>↗</span></span></div>
+          </a>
           <article class="story-card reveal">
             <div class="story-image"><img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=900&q=80" alt="테이블 위에 준비된 다양한 커피" loading="lazy"></div>
             <div class="story-content"><span class="category">LIFESTYLE · 일상</span><h3>나에게 맞는 커피를 찾는 즐거움</h3><p>향과 산미, 바디감의 차이를 알아가며 나만의 취향을 발견하는 방법을 살펴봅니다.</p><a class="read-more" href="#knowledge">이야기 살펴보기 <span>↗</span></a></div>
